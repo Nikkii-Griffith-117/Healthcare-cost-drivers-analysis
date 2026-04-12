@@ -19,7 +19,9 @@ This project analyzes healthcare cost drivers using a dataset of 100,000+ patien
 - Created duplicate sheet to preserve the original dataset before cleaning
 #### SQL Analysis (BigQuery)
   - SQL queries were executed in BigQuery to analyze the relationship between lifestyle habits, health conditions, and healthcare utilization and costs.
----
+  - Standardized categorical values (e.g., “Never” vs “never”) during SQL analysis using transformation functions (UPPER/INITCAP) to ensure accurate grouping
+    
+  ---
 ## Data Quality Corrections (Excel)
 - Corrected *4,441 records* where individuals under 21 were assigned invalid lifestyle behaviors:
     - Updated alcohol frequency to "*None*"
@@ -129,6 +131,6 @@ Smoking has a substantially greater impact on healthcare costs than alcohol cons
 ---
 
 ## Next Steps  
-- Perform SQL analysis to validate trends  
-- Build Tableau dashboard to visualize key insights  
-- Develop business recommendations based on findings  
+- Develop interactive dashboards in Tableau to visualize key findings
+- Translate insights into actionable business recommendations
+- Continue refining analysis to support decision-making in healthcare cost management

@@ -18,7 +18,7 @@ This project analyzes healthcare cost drivers using a dataset of 100,000+ patien
 - Created duplicate sheet to preserve the original dataset before cleaning
 
 ---
-## Data Quality Corrections
+## Data Quality Corrections (Excel)
 - Corrected *4,441 records* where individuals under 21 were assigned invalid lifestyle behaviors:
     - Updated alcohol frequency to "*None*"
     - Updated smoking status to "*Never*"

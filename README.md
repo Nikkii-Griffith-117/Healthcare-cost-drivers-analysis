@@ -6,16 +6,26 @@ This project analyzes healthcare cost drivers using a dataset of 100,000+ patien
 ---
 
 ##  Business Questions  
-- What factors contribute most to higher healthcare costs?  
-- Do lifestyle habits (smoking, alcohol use) impact healthcare utilization?  
-- Which demographic groups generate the highest total claims?  
+- Do lifestyle habits (smoking and alcohol use) impact healthcare utilization and total claims?  
+- How do health conditions (e.g., hypertension and BMI) influence medical costs?  
+- Which lifestyle group (smokers vs non-smokers, alcohol users vs non-users) generates the highest claims?  
 
 ---
 
 ##  Data Cleaning (Excel)  
-- Reduced dataset from 54 columns to relevant features  
-- Converted raw data into structured table format  
-- Created separate sheet to preserve original dataset  
+- Reduced dataset from 54 columns to relevant features for analysis 
+- Converted raw data into structured table format for easier filtering and manipulation
+- Created duplicate sheet to preserve the original dataset before cleaning
+
+---
+## Data Quality Corrections
+- Corrected *4,441 records* where individuals under 21 were assigned invalid lifestyle behaviors:
+    - Updated alcohol frequency to "*None*"
+    - Updated smoking status to "*Never*"
+- Corrected *2,115 records* where individuals under age 16 were assigned unrealistic values:
+    - Set income values to *NULL* (blannk)
+    - Set dependents to 0
+- Addressed invalid or missing age values (e.g., age= 0) to improve dataset consistency
 
 ---
 

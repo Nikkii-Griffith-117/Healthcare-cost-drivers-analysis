@@ -1,11 +1,7 @@
-# Healthcare-cost-drivers-analysis
-Analyzing healthcare cost drivers using Excel, SQL, and Tableau to identify patterns in patient demographics, lifestyle, and utilization.
-*This project is currently in progress as part of my data analytics portfolio.*
-
 # Healthcare Cost Drivers Analysis (In Progress)
 
 ## Project Overview  
-This project explores key drivers of healthcare costs and utilization using a dataset of 100,000+ patient records. The goal is to identify patterns in lifestyle, demographics, and health conditions that impact medical expenses.
+This project analyzes healthcare cost drivers using a dataset of 100,000+ patient records to uncover patterns in lifestyle, demographics, and utilization.
 
 ---
 

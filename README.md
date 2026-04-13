@@ -17,12 +17,9 @@ This project analyzes healthcare cost drivers using a dataset of 100,000+ patien
 - Reduced dataset from 54 columns to relevant features for analysis 
 - Converted raw data into structured table format for easier filtering and manipulation
 - Created duplicate sheet to preserve the original dataset before cleaning
-#### SQL Analysis (BigQuery)
-  - SQL queries were executed in BigQuery to analyze the relationship between lifestyle habits, health conditions, and healthcare utilization and costs.
-  - Standardized categorical values (e.g., “Never” vs “never”) during SQL analysis using transformation functions (UPPER/INITCAP) to ensure accurate grouping
-    
-  ---
-## Data Quality Corrections (Excel)
+   
+#### *Data Quality Corrections* 
+#### Microsoft Excel
 - Corrected *4,441 records* where individuals under 21 were assigned invalid lifestyle behaviors:
     - Updated alcohol frequency to "*None*"
     - Updated smoking status to "*Never*"
@@ -30,9 +27,15 @@ This project analyzes healthcare cost drivers using a dataset of 100,000+ patien
     - Set income values to *NULL* (blank)
     - Set dependents to 0
 - Addressed invalid or missing age values (e.g., age= 0) to improve dataset consistency
+#### BigQuery (SQL)
+- Standardized categorical values (e.g., “Never” vs “never”) during SQL analysis using transformation functions (UPPER/INITCAP) to ensure accurate grouping
 
-___
-## SQL Queries (BIgQuery)
+---
+## SQL Analysis (BigQuery)
+  - SQL queries were executed in BigQuery to analyze the relationship between lifestyle habits, health conditions, and healthcare utilization and costs.
+  
+ ___
+## SQL Queries (BigQuery)
 
 ### -- Q1: Lifestyle impact (smoking + alcohol)
 
@@ -102,12 +105,12 @@ Smoking is a significantly stronger driver of healthcare costs than alcohol cons
 ### 3. Lifestyle Comparison (Smoking vs Alcohol)
 - Current smokers had the highest average healthcare costs (~$2,023)
 - Followed by:
- - Former smokers (~$1,464)
- - Non-smokers (~$1,252)
+  - Former smokers (~$1,464)
+  - Non-smokers (~$1,252)
 - Alcohol consumption showed much smaller cost differences:
- - Weekly (~$1,400)
- - Daily (~$1,391)
- - Occasional (~$1,386)
+  - Weekly (~$1,400)
+  - Daily (~$1,391)
+  - Occasional (~$1,386)
 #### Key takeaway:
 Smoking has a substantially greater impact on healthcare costs than alcohol consumption.
 
@@ -124,9 +127,9 @@ Smoking has a substantially greater impact on healthcare costs than alcohol cons
 
 ---
 ## Tools Used  
-- Excel (data cleaning & initial analysis)  
-- BigQuery (for deeper analysis with SQL)  
-- Tableau (planned for visualization)  
+- Excel: Used for initial data inspection and preliminary cleaning.
+- BigQuery (SQL): Leveraged for complex querying and scalable analysis of the 100k+ record dataset, ensuring greater performance and reliability than traditional spreadsheets.
+- Tableau: Selected for developing interactive visualizations and final insights.
 
 ---
 

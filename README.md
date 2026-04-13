@@ -104,7 +104,8 @@ Smoking is a significantly stronger driver of healthcare costs than alcohol cons
   
 ### 3. Lifestyle Comparison (Smoking vs Alcohol)
 - Current smokers had the highest average healthcare costs (~$2,023)
-- Followed by:
+
+  *Followed by:*
   - Former smokers (~$1,464)
   - Non-smokers (~$1,252)
 - Alcohol consumption showed much smaller cost differences:

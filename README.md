@@ -116,7 +116,7 @@ Smoking is a significantly stronger driver of healthcare costs than alcohol cons
 Smoking has a substantially greater impact on healthcare costs than alcohol consumption.
 
 ---
-## SQL Analysis Screenshots
+## SQL Analysis;
 ###### Question 1:
 <img width="1818" height="803" alt="Pasted Graphic 2" src="https://github.com/user-attachments/assets/933a4a52-8fbc-4eda-bb4e-5bf024874f9c" />
 
@@ -127,9 +127,19 @@ Smoking has a substantially greater impact on healthcare costs than alcohol cons
 <img width="1722" height="1434" alt="image" src="https://github.com/user-attachments/assets/f9b29af5-6c9d-4fdb-9ce8-bf36e65ad931" />
 
 ---
+## Pivot Table: Total vs Normalized Claims by Smoking Status;
+*To further validate initial findings, a pivot table was created to compare aggregate and normalized claim metrics.*
+<img width="1760" height="1318" alt="image" src="https://github.com/user-attachments/assets/55b97331-461d-4f68-ae38-5004004e3e17" />
+
+The dataset contains an imbalanced distribution of smoking categories, with non-smokers representing the majority of the observations. as a result, aggregate claim totals are not directly comparable across groups.
+
+After normalizing claims on a per-person basis, utilization rates were found to be relatively consistent across groups. This highlights the importance of controlling for population size when comparing healthcare metrics across demographic segments.
+
+---
 ## Tools Used  
 - Excel: Used for initial data inspection and preliminary cleaning.
 - BigQuery (SQL): Leveraged for complex querying and scalable analysis of the 100k+ record dataset, ensuring greater performance and reliability than traditional spreadsheets.
+- Google Sheets: Utilized for the creation of a pivot table for further validation of initial findings.
 - Tableau: Selected for developing interactive visualizations and final insights.
 
 ---
